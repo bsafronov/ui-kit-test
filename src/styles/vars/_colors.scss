@@ -1,0 +1,102 @@
+:root {
+  // Primary
+  --colors-blue-light: #b3d7ff;
+  --colors-blue-default: #007aff;
+  --colors-blue-dark: #004aff;
+
+  // Orange
+  --colors-orange-light: #ffdfb3;
+  --colors-orange-default: #ff9500;
+  --colors-orange-dark: #ff6700;
+
+  // Green
+  --colors-green-light: #c2eecd;
+  --colors-green-default: #34c759;
+  --colors-green-dark: #21b33e;
+
+  // Yellow
+  --colors-yellow-light: #fff0b3;
+  --colors-yellow-default: #ffcc00;
+  --colors-yellow-dark: #ffad00;
+
+  // Red
+  --colors-red-light: #ffc4c1;
+  --colors-red-default: #ff3b30;
+  --colors-red-dark: #ff1913;
+
+  // Black
+  --colors-black-default: #000000;
+
+  // White
+  --colors-white-default: #ffffff;
+
+  // Indigo
+  --colors-indigo-light: #cdccf3;
+  --colors-indigo-default: #5856d6;
+  --colors-indigo-dark: #2d2bbc;
+
+  // Purple
+  --colors-purple-light: #e7cbf5;
+  --colors-purple-default: #af52de;
+  --colors-purple-dark: #8628c8;
+
+  // Pink
+  --colors-pink-light: #ffc0cc;
+  --colors-pink-default: #ff2d55;
+  --colors-pink-dark: #ff112a;
+
+  // Teal
+  --colors-teal-light: #ceeffe;
+  --colors-teal-default: #5ac8fa;
+  --colors-teal-dark: #2ea7f6;
+}
+
+:root[data-theme="light"] {
+  // Gray
+  --colors-gray-1: #2ea7f6;
+  --colors-gray-2: #aeaeb2;
+  --colors-gray-3: #c7c7cc;
+  --colors-gray-4: #d1d1d6;
+  --colors-gray-5: #e5e5ea;
+  --colors-gray-6: #f2f2f7;
+
+  // Background
+  --colors-bg-primary: #f9f9f9;
+  --colors-bg-secondary: #ffffff;
+  --colors-bg-tertiary: #efeff4;
+  --colors-bg-alert: #f2f2f2;
+
+  // Separator
+  --colors-separator: #e5e5ea;
+
+  // Label
+  --colors-label-primary: #000000;
+  --colors-label-secondary: rgba(#3c3c43, 0.6);
+  --colors-label-tertiary: rgba(#3c3c43, 0.3);
+  --colors-label-quaternary: rgba(#3c3c43, 0.18);
+}
+
+:root[data-theme="dark"] {
+  // Gray
+  --colors-gray-1: #8e8e93;
+  --colors-gray-2: #636366;
+  --colors-gray-3: #48484a;
+  --colors-gray-4: #3a3a3c;
+  --colors-gray-5: #2c2c2e;
+  --colors-gray-6: #1c1c1e;
+
+  // Background
+  --colors-bg-primary: #000000;
+  --colors-bg-secondary: #1c1c1e;
+  --colors-bg-tertiary: #2c2c2e;
+  --colors-bg-alert: rgba(#1e1e1e, 0.75);
+
+  // Separator
+  --colors-separator: #38383a;
+
+  // Label
+  --colors-label-primary: #ffffff;
+  --colors-label-secondary: rgba(#ebebf5, 0.6);
+  --colors-label-tertiary: rgba(#ebebf5, 0.3);
+  --colors-label-quaternary: rgba(#ebebf5, 0.16);
+}

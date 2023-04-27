@@ -1,3 +1,11 @@
 @import "reset";
-@import "vars";
+@import "vars/index";
 @import "global";
+@import "fonts";
+
+html {
+  font-size: var(--font-size-default);
+  background-color: var(--colors-bg-primary);
+  font-weight: 400;
+  font-family: var(--font-family-default);
+}

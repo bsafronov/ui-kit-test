@@ -20,8 +20,10 @@
     "noFallthroughCasesInSwitch": true,
     "baseUrl": ".",
     "paths": {
-      "svg/*": ["src/assets/svg/*"]
-    }
+      "@/*": ["src/*"],
+      "@svg/*": ["src/assets/svg/*"]
+    },
+    "plugins": [{ "name": "typescript-plugin-css-modules" }]
   },
   "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }]
