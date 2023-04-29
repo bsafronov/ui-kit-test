@@ -1,0 +1,16 @@
+.card {
+  border: 1px solid #e1e1e1;
+  background-color: #fff;
+  border-radius: 0.25rem;
+  width: max-content;
+
+  &__title-wrapper {
+    background-color: #ecebeb;
+    padding: 1rem;
+    border-bottom: #e1e1e1;
+  }
+
+  &__content-wrapper {
+    padding: 1rem;
+  }
+}

@@ -1,6 +1,11 @@
 .button {
   border: 1px solid transparent;
   font-family: inherit;
+  font-weight: 600;
+  line-height: 120%;
+  border-radius: 4px;
+  background-color: transparent;
+  transition: background-color 0.2s;
 
   &:not(:disabled) {
     cursor: pointer;
@@ -9,82 +14,70 @@
 
 .variant {
   &-primary {
-    border-color: var(--colors-blue-default);
-    background-color: var(--colors-blue-default);
-    color: var(--colors-white-default);
-    transition: background-color 0.2s;
+    background-color: #5181b8;
+    border-color: #5181b8;
+    color: white;
+
     &:hover {
-      background-color: var(--colors-blue-dark);
+      background-color: #4179b9;
     }
   }
+  &-secondary {
+    background-color: #e5ebf1;
+    border-color: #e5ebf1;
+    color: #55677d;
 
-  &-add {
-    border-color: var(--colors-separator);
-    background-color: var(--colors-bg-tertiary);
-    color: var(--colors-blue-default);
+    &:hover {
+      background-color: #dfe4eb;
+    }
   }
+  &-plain {
+    color: #55677d;
 
-  &-danger {
-    border-color: var(--colors-red-default);
-    background-color: var(--colors-red-default);
-    color: var(--colors-white-default);
+    &:hover {
+      background-color: #e5ebf1;
+    }
   }
+  &-decline {
+    color: #d81f1f;
+    transition: background-color 0.2s, color 0.2s;
 
-  &-caution {
-    background-color: var(--colors-orange-default);
-    border-color: var(--colors-orange-default);
-    color: var(--colors-white-default);
+    &:hover {
+      background-color: #fffbfb;
+      color: #bd1d1d;
+    }
   }
+  &-accept {
+    background-color: #3c993c;
+    border-color: #3c993c;
+    color: white;
 
-  &-link {
-    border-color: transparent;
-    background-color: transparent;
-    color: var(--colors-black-default);
+    &:hover {
+      background-color: #388f38;
+    }
   }
-}
+  &-outline {
+    border-color: #5181b8;
+    color: #2a5885;
+    transition: background-color 0.2s, color 0.2s;
 
-.rounded {
-  &-full {
-    border-radius: 9999px;
+    &:hover {
+      background-color: #5181b8;
+      color: white;
+    }
   }
-
-  &-lg {
-    border-radius: var(--border-radius-lg);
-  }
-
-  &-md {
-    border-radius: var(--border-radius-md);
-  }
-
-  &-sm {
-    border-radius: var(--border-radius-md);
-  }
-}
-
-.outlined {
-  background-color: transparent;
-  color: var(--colors-black-default);
 }
 
 .size {
   &-lg {
-    padding: 0.25rem 1rem;
-    font-weight: 600;
-    font-size: var(--font-size-headline);
-    line-height: var(--line-height-headline);
+    padding: 10px 20px;
   }
 
   &-md {
-    padding: 0.5rem 2rem;
-    font-weight: 400;
-    font-size: var(--font-size-subhead);
-    line-height: var(--line-height-subhead);
+    padding: 6px 16px;
   }
 
   &-sm {
-    padding: 0.75rem 3rem;
-    font-weight: 400;
-    font-size: var(--font-size-caption-1);
-    line-height: var(--line-height-caption-1);
+    padding: 5px 16px;
   }
 }
