@@ -1,6 +1,9 @@
-import { Button, Card, Heading } from "@/ui";
+import { Card, Heading } from "@/ui";
 import Pallete from "./Pallete";
 import { colors } from "@/colors";
+import ButtonsGroup from "./ButtonsGroup";
+import { ReactComponent as Plus } from "@svg/plus.svg";
+import InputsGroup from "./InputsGroup";
 
 const Playground = () => {
   return (
@@ -13,61 +16,36 @@ const Playground = () => {
         <Heading lvl={5}>Заголовок 5</Heading>
         <Heading lvl={6}>Заголовок 6</Heading>
       </Card>
-      <div className="flex gap-1">
-        <Card
-          className="flex flex-col gap-1 align-start"
-          head={<Heading lvl={5}>Маленькие кнопки</Heading>}
-        >
-          <Button size="sm">Стандартная</Button>
-          <Button size="sm" variant="secondary">
-            Дополнительная
-          </Button>
-          <Button size="sm" variant="plain">
-            Пустая
-          </Button>
-          <Button size="sm" variant="outline">
-            С обводкой
-          </Button>
-          <Button size="sm" variant="decline">
-            Отменить
-          </Button>
-          <Button size="sm" variant="accept">
-            Принять
-          </Button>
-        </Card>
-        <Card
-          className="flex flex-col gap-1 align-start"
-          head={<Heading lvl={5}>Средние кнопки</Heading>}
-        >
-          <Button>Стандартная</Button>
-          <Button variant="secondary">Дополнительная</Button>
-          <Button variant="plain">Пустая</Button>
-          <Button variant="outline">С обводкой</Button>
-          <Button variant="decline">Отменить</Button>
-          <Button variant="accept">Принять</Button>
-        </Card>
-        <Card
-          className="flex flex-col gap-1 align-start"
-          head={<Heading lvl={5}>Средние кнопки</Heading>}
-        >
-          <Heading lvl={5}>Большие кнопки</Heading>
-          <Button size="lg">Стандартная</Button>
-          <Button size="lg" variant="secondary">
-            Дополнительная
-          </Button>
-          <Button size="lg" variant="plain">
-            Пустая
-          </Button>
-          <Button size="lg" variant="outline">
-            С обводкой
-          </Button>
-          <Button size="lg" variant="decline">
-            Отменить
-          </Button>
-          <Button size="lg" variant="accept">
-            Принять
-          </Button>
-        </Card>
+      <div className="flex gap-1 flex-wrap">
+        <ButtonsGroup
+          title={<Heading lvl={5}>Маленькие кнопки</Heading>}
+          styles={{ size: "sm" }}
+        />
+        <ButtonsGroup
+          title={<Heading lvl={5}>Средние кнопки</Heading>}
+          styles={{ size: "md" }}
+        />
+        <ButtonsGroup
+          title={<Heading lvl={5}>Большие кнопки</Heading>}
+          styles={{ size: "lg" }}
+        />
+        <ButtonsGroup
+          title={<Heading lvl={5}>Выкл. кнопки</Heading>}
+          disabled
+        />
+        <ButtonsGroup
+          title={<Heading lvl={5}>Before кнопки</Heading>}
+          styles={{ before: <Plus /> }}
+        />
+        <ButtonsGroup
+          title={<Heading lvl={5}>After кнопки</Heading>}
+          styles={{
+            after: <Plus />,
+          }}
+        />
+      </div>
+      <div className="flex flex-col">
+        <InputsGroup />
       </div>
       <div className="flex flex-col">
         <Pallete color={colors.indigo} />

@@ -3,11 +3,12 @@
   background-color: #fff;
   border-radius: 0.25rem;
   width: max-content;
+  box-shadow: 2px 2px 4px #dbdbdb;
 
   &__title-wrapper {
-    background-color: #ecebeb;
+    background-color: #f2f2f2;
     padding: 1rem;
-    border-bottom: #e1e1e1;
+    border-bottom: 1px solid #e1e1e1;
   }
 
   &__content-wrapper {

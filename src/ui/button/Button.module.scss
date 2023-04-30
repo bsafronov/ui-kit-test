@@ -4,11 +4,17 @@
   font-weight: 600;
   line-height: 120%;
   border-radius: 4px;
-  background-color: transparent;
   transition: background-color 0.2s;
+  display: flex;
+  gap: 8px;
+  align-items: center;
 
   &:not(:disabled) {
     cursor: pointer;
+  }
+
+  &:disabled {
+    opacity: 0.5;
   }
 }
 
@@ -18,7 +24,7 @@
     border-color: #5181b8;
     color: white;
 
-    &:hover {
+    &:not(:disabled):hover {
       background-color: #4179b9;
     }
   }
@@ -27,22 +33,24 @@
     border-color: #e5ebf1;
     color: #55677d;
 
-    &:hover {
+    &:not(:disabled):hover {
       background-color: #dfe4eb;
     }
   }
   &-plain {
     color: #55677d;
+    background-color: transparent;
 
-    &:hover {
+    &:not(:disabled):hover {
       background-color: #e5ebf1;
     }
   }
   &-decline {
     color: #d81f1f;
+    background-color: transparent;
     transition: background-color 0.2s, color 0.2s;
 
-    &:hover {
+    &:not(:disabled):hover {
       background-color: #fffbfb;
       color: #bd1d1d;
     }
@@ -52,16 +60,17 @@
     border-color: #3c993c;
     color: white;
 
-    &:hover {
+    &:not(:disabled):hover {
       background-color: #388f38;
     }
   }
   &-outline {
     border-color: #5181b8;
     color: #2a5885;
+    background-color: transparent;
     transition: background-color 0.2s, color 0.2s;
 
-    &:hover {
+    &:not(:disabled):hover {
       background-color: #5181b8;
       color: white;
     }
@@ -70,14 +79,14 @@
 
 .size {
   &-lg {
-    padding: 10px 20px;
+    padding: 1rem 2rem;
   }
 
   &-md {
-    padding: 6px 16px;
+    padding: 0.5rem 1.25rem;
   }
 
   &-sm {
-    padding: 5px 16px;
+    padding: 0.25rem 0.75rem;
   }
 }

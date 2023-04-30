@@ -1,0 +1,48 @@
+.input {
+  border: 1px solid #d3d9de;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  background-color: #f7f8fa;
+  font-family: var(--font-family-default);
+
+  &:focus {
+    outline: none;
+  }
+
+  &::placeholder {
+    color: #aeb7c2;
+  }
+
+  &__wrapper {
+    align-items: start;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  &__label {
+    color: #6f7985;
+  }
+
+  &__error {
+    opacity: 0;
+    font-family: var(--font-family-default);
+    font-weight: 500;
+    font-size: 12px;
+    pointer-events: none;
+    transform: translateY(-2rem);
+    color: #e64646;
+    transition: transform 0.2s, opacity 0.2s;
+  }
+
+  &__error.visible {
+    opacity: 1;
+    pointer-events: all;
+    transform: translateY(0);
+  }
+
+  &__invalid {
+    background-color: #faebeb;
+    border-color: #e64646;
+  }
+}
