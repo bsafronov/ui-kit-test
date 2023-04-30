@@ -4,6 +4,7 @@ import { colors } from "@/colors";
 import ButtonsGroup from "./ButtonsGroup";
 import { ReactComponent as Plus } from "@svg/plus.svg";
 import InputsGroup from "./InputsGroup";
+import SelectGroup from "./SelectGroup";
 
 const Playground = () => {
   return (
@@ -44,8 +45,9 @@ const Playground = () => {
           }}
         />
       </div>
-      <div className="flex flex-col">
+      <div className="flex gap-1 align-start">
         <InputsGroup />
+        <SelectGroup />
       </div>
       <div className="flex flex-col">
         <Pallete color={colors.indigo} />
