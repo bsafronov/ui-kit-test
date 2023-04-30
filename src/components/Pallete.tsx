@@ -1,5 +1,3 @@
-import React from "react";
-
 interface ColorProps {
   100: string;
   200: string;

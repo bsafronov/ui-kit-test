@@ -57,7 +57,7 @@ export const Select = forwardRef<HTMLDivElement, ISelect>((props, ref) => {
               [s.active]: item.value === activeOption?.value,
             })}
             key={index}
-            onClick={(e) => handleSetActive(item)}
+            onClick={() => handleSetActive(item)}
           >
             {item.label}
           </li>
